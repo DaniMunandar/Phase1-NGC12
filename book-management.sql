@@ -29,4 +29,4 @@ CREATE TABLE book_loans (
 
 -- D. Create indexes
 CREATE INDEX idx_author_id ON books(author_id);
-CREATE INDEX idx_return_date ON book_loans(return_date);
+CREATE INDEX idx_return_date ON book_loans(return_date,book_id);
